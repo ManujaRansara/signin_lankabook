@@ -1,0 +1,113 @@
+<html>
+   <head>
+    <title>Lankabook | Login</title>
+   </head>
+    <style>
+      #bar{
+         height:0px;
+         background-color:rgb(11, 66, 129);
+         color: aliceblue;
+         padding:60px;
+         text-align:left;
+         
+      }
+
+      #signup{
+         background-color:rgb(37, 189, 37) ;
+         width:70px;
+         text-align: center;
+         padding: 6px;
+         border-radius: 4px;
+         display:inline;
+         font-weight:600;
+         border-color: none;
+         border-width: 0;
+         color: white;
+         cursor:pointer;
+      }
+      #signup:hover{
+         cursor: pointer;
+         background-color: white;
+         color: rgb(37, 189, 37);
+     }
+     #signup:active{
+        cursor: pointer;
+        background-color:  rgb(37, 189, 37);
+        color:white;
+     }
+      #signin{
+         background-color:white;
+         width:600px;
+         margin:auto;
+         margin-top:120px;
+         padding:10px;
+         text-align:center;
+         display:block;
+         padding-top:80px;
+         height: 300px;
+      }
+
+
+      #text{
+          height:40px;
+          width:300px;
+          border-radius: 4px;
+          border:solid 1px #ccc;
+      }
+      #button{
+          height: 50px;
+          width:300px;
+          background-color:rgb(4, 67, 139);
+          color:white;
+          font-size: 16px;
+          font-weight:bold;
+          cursor:pointer;
+      }
+
+      #button:hover{
+         cursor:pointer;
+         background-color: white;
+         border-width: 2px;
+         border-color: blue;
+         color:blue;
+     }
+     #button:active{
+        background-color:rgb(4, 67, 139);
+        color:white;
+        font-size: 16px;
+        font-weight:bold;
+        cursor:pointer;
+     }
+      #title{
+          font-size: medium;
+          font-weight: bold;
+          font:bold;
+      }
+    </style>
+   <body style="font-family:tahoma;background-color:#e9ebee">
+       <div id="bar"> 
+          <div style="font-size:40px;display:inline;margin:auto;font-weight:bold;"> 
+               lankabook
+          </div> 
+          <div style="display:inline;" >
+            <button id="signup" >Signup</button>
+         </div>     
+      </div>
+      <div id="signin">
+           <div id="title">
+            Log in to lankabook
+         </div><br><br>
+          <input type="text" id="text" placeholder="Email"><br><br>
+          <input type="password" id="text" placeholder="Password"><br><br>
+          <button id="button" >Log in</button>
+      </div>
+   </body>
+   <script>
+      var loginButton = document.getElementById('signup');
+
+      loginButton.addEventListener('click', function () {
+  
+          window.location.href = 'signup1.html';
+      });
+   </script>
+</html>
